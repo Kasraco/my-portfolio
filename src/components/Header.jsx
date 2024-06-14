@@ -7,7 +7,7 @@ const Header = () => {
         <div className="container maxt-auto flex justify-between items-center">
             <Link href="/">
                 <h1 className="text-4xl font-semibold">
-                    Kasraco<span className="text-accent">.</span>
+                    {"<I'm Dev/>"}<span className="text-accent">.</span>
                 </h1>
             </Link>
 
