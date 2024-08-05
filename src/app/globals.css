@@ -4,19 +4,131 @@
 
 @layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-opensane bg-bacgroundColor text-textColor1 leading-loose text-[16px];
   }
 
+  /* h1 {
+    @apply font-primary text-[20vw] font-extrabold tracking-tighter text-textColor1 xl:text-[5vw];
+  } */
+
   .h1 {
-    @apply text-[48px] xl:text-[70px] leading-[1.1] font-semibold;
+    @apply font-primary text-[10vw] xl:text-[5vw] leading-[1.1] font-bold;
   }
 
   .h2 {
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+    @apply font-primary text-[7.5vw] xl:text-[3vw] leading-[1.1] font-semibold;
   }
 
   .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+    @apply font-primary text-[4.16vw] xl:text-[1.5vw] leading-[1.1] font-semibold;
   }
 
+  .menu-bar {
+    @apply bg-bacgroundColor lg:bg-transparent;
+  }
+
+  .menu-bar,
+  .menu-overlay-bar {
+    @apply fixed left-0 top-0 flex lg:flex-col w-screen border-b lg:border-r  lg:w-max lg:h-screen  lg:items-center  z-[1]  py-1 px-1;
+  }
+
+  .menu-bar .menu-logo,
+  .menu-overlay-bar .menu-logo {
+    @apply flex lg:flex-col flex-1 lg:flex-[0] justify-center lg:justify-start items-center lg:order-1 lg:fixed lg:left-32 lg:top-1;
+  }
+
+  .menu-bar .menu-open,
+  .menu-overlay-bar .menu-open {
+    @apply lg:flex  lg:order-2 lg:flex-1 lg:flex-col lg:justify-center;
+  }
+
+  /* .menu-bar a,
+  .menu-open p {
+    @apply flex justify-center lg:flex-[0] lg:fixed lg:left-32 cursor-pointer;
+  } */
+
+  .menu-overlay {
+    @apply fixed left-0 top-0 w-screen h-screen  bg-primary z-[2] Mymenu-overlay lg:Mymenu-overlay-center flex flex-row justify-start items-start px-32 pt-32;
+  }
+
+  .Mymenu-overlay {
+    clip-path: circle(0% at 0% 0%);
+  }
+
+  .Mymenu-overlay-center {
+    clip-path: circle(0% at 0% 50%);
+  }
+
+  .menu-copy {
+    @apply flex;
+  }
+
+  .menu-link-item {
+    width: max-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .menu-link-item-holder a {
+    @apply text-black lg:text-7xl text-5xl  leading-[4rem] font-normal tracking-tight;
+  }
+
+  .menu-close p {
+    @apply text-black cursor-pointer;
+  }
+
+  .menu-close-icon {
+    @apply hidden flex-[2] lg:flex items-end cursor-pointer;
+  }
+  .menu-close-icon p {
+    font-size: 100px;
+    -webkit-text-stroke: 5px #c5fb45;
+  }
+
+  .menu-info {
+    @apply flex;
+  }
+
+  .menu-info-col {
+    @apply flex flex-1 flex-col justify-end;
+  }
+
+  .menu-perview {
+    @apply flex-[4] flex  justify-end items-end;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #87ceeb;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #4682b4;
+  }
+
+  .resume_Container {
+    @apply flex flex-col gap-[30px] text-center lg:text-left;
+  }
+  .resume_description {
+    @apply max-w-[600px] text-balance text-textColor1/60 mx-auto xl:mx-0;
+  }
+  .resume_scrollArea {
+    @apply h-[400px] xl:h-[350px];
+  }
+  .resume_historyLine {
+    @apply absolute left-4 top-0 bg-linkButtonColor w-[4px] h-full origin-top;
+  }
+
+  .resume_listContainer {
+    @apply w-full flex flex-col items-start  justify-between gap-6 ml-16;
+  }
+  .resume_listItem {
+    @apply w-[100%] h-auto text-left;
+  }
+
+  .resume_listItemTitle {
+    @apply capitalize font-primary font-bold text-2xl;
+  }
+
+  .resume_listItemLight {
+    @apply capitalize text-textColor1/50;
+  }
 }
