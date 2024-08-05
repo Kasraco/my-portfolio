@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -17,18 +17,25 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "960px",
-      xl: "1200px"
+      xl: "1200px",
     },
     fontFamily: {
-      primary: "var(--font-jetbrainsMono)",
+      primary: ["var(--font-oswald)"],
+      opensane: ["var(--font-opensans)"],
     },
     extend: {
       colors: {
-        primary: '#1c1c22',
+        primary: "#87CEEB",
+        bacgroundColor: "#F0F8FF",
+        textColor1: "#333333",
+        textColor2: "#444444",
+        highlight: "#FFA07A",
+        borderColor: "#D3D3D3",
+        linkButtonColor: "#4682B4",
         accent: {
-          DEFAULT: '#00ff99',
-          hover: '#00e187'
-        }
+          DEFAULT: "#00ff99",
+          hover: "#00e187",
+        },
       },
       keyframes: {
         "accordion-down": {
@@ -47,4 +54,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
