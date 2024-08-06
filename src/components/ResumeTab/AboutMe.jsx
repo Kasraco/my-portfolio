@@ -7,7 +7,7 @@ const AboutMe = ({ data }) => {
         <p className="resume_description">{data.description}</p>
       </div>
       <motion.ul
-        initial={{ y: 100 }}
+        initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0"
       >
