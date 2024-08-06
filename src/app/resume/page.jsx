@@ -164,7 +164,6 @@ const skills = {
   skillList: [
     { icon: <SiDotnet />, Name: "DotNet" },
     { icon: <SiCsharp />, Name: "CSharp" },
-    { icon: <DiDotnet />, Name: "VS Code" },
     { icon: <FaReact />, Name: "React" },
     { icon: <SiNextdotjs />, Name: "NextJs" },
     { icon: <FaHtml5 />, Name: "Html" },
@@ -180,7 +179,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 1, delay: 1, ease: "easeIn" },
+        transition: { duration: 1, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 "
     >
